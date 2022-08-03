@@ -53,6 +53,10 @@ footer a:hover {
   color: #22333B; /*點選變色*/
 }
 
-a :focus{
+header ul li a :focus{
+  background-color: #22333B;
+}
+
+header ul li a :active{
   background-color: #22333B;
 }
