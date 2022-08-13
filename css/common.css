@@ -32,7 +32,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: absolute; 
   bottom: 0;  /*放最底下*/
   width: 100%;
   padding: 1rem;  /*往上一點*/
