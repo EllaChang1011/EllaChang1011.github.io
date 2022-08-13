@@ -52,3 +52,7 @@ footer a {
 footer a:hover {
   color: #22333B; /*點選變色*/
 }
+
+.active {
+  background-color: #22333B;
+}
