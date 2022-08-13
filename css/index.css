@@ -1,0 +1,22 @@
+main.backImage {
+    width: 100%;
+    min-height: 85vh; /*上面空*/
+    display: flex;
+    flex-direction: column; /*正方向*/
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+    border-radius:50%
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+main h1 {
+    font-family: 'Square Peg', cursive;
+    letter-spacing: 3px;
+}
