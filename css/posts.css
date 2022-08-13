@@ -3,7 +3,7 @@ main li a {
     margin: 1rem 2.5rem;
     display: flex;
     font-size: 2rem;
-    color: #F2F4F3;
+    color: #5E503F;
     text-decoration: none;   
 }
 
@@ -12,7 +12,7 @@ main li {
 }
 
 main li :hover {
-    color: white;
+    color: #F2F4F3;
     background-color: #5E503F;
     border-radius: 50px;
 }
