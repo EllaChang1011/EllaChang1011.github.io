@@ -4,17 +4,14 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
-    "i18next": "^24.2.2",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.4.0",
     "react-icons": "^5.4.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^4.2.4"
   },
-  "homepage": "https://ellachang1011.github.io/EllaChang1011.github.io",
+  "homepage": "https://EllaChang1011.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -44,7 +41,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.5.1"
+    "postcss": "^8.5.1",
+    "typescript": "^4.9.5"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
