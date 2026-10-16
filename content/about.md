@@ -14,9 +14,12 @@ My research focused on the security of large language models. I'm also intereste
 
 ## Education
 
-- **NYCU**, M.S. in Intelligent Systems (2024 – 2026)
-- **NTHU**, B.S. in Interdisciplinary Program of Education (2020 – 2024)
-- **HSNU** (2017 – 2020)
+- **National Yang Ming Chiao Tung University (NYCU)**<br>
+  M.S. in Intelligent Systems (2024 – 2026)
+- **National Tsing Hua University (NTHU)**<br>
+  B.S. in Interdisciplinary Program of Education (2020 – 2024)
+- **The Affiliated Senior High School of National Taiwan Normal University (HSNU)**<br>
+  (2017 – 2020)
 
 ---
 
