@@ -1,0 +1,73 @@
+baseURL = "https://EllaChang1011.github.io/"
+languageCode = "zh-tw"
+title = "Ting-Yen (Ella) Chang"
+theme = "PaperMod"
+paginate = 5
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  showToc = true
+
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm Ella 👋"
+    subtitle = """
+M.S., NYCU Institute of Intelligent Systems · Taipei, Taiwan<br>
+I'm passionate about AI, LLM security, and intelligent systems.<br><br>
+🔍 **Open to work** — I recently graduated and am looking for new opportunities.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/EllaChang1011"
+
+  [[params.socialIcons]]
+    name = "telegram"
+    url = "https://t.me/black_bear_1011"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:ellating1011@gmail.com"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ting-yen-chang-8a2059261/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
