@@ -1,0 +1,36 @@
+{{- define "main" }}
+<article class="post-single pj-single">
+  <header class="post-header">
+    <a class="pj-back" href="{{ .Parent.RelPermalink }}">← Projects</a>
+    <div class="pj-label pj-{{ .Params.category | default "other" }}">{{ .Params.label }}<span class="pj-year">{{ .Date.Format "2006" }}</span></div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Params.summary }}<div class="post-description">{{ . }}</div>{{ end }}
+  </header>
+
+  {{- with .Params.links }}
+  <div class="pj-buttons">
+    {{- range $i, $l := . }}{{ if $l.url }}
+    <a class="{{ if eq $i 0 }}primary{{ end }}" href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.name }} ↗</a>
+    {{- end }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- with .Params.facts }}
+  <div class="pj-facts">
+    {{- range . }}<div class="pj-fact"><b>{{ .value }}</b><span>{{ .label }}</span></div>{{ end }}
+  </div>
+  {{- end }}
+
+  {{ partial "projects/stack.html" . }}
+
+  <div class="post-content">{{ .Content }}</div>
+
+  {{- $related := where (where site.RegularPages "Section" "posts") "Params.project" .File.ContentBaseName }}
+  {{- with $related }}
+  <aside class="pj-related">
+    <h3>Related posts</h3>
+    {{- range . }}<a href="{{ .RelPermalink }}">📝 {{ .Title }} »</a>{{ end }}
+  </aside>
+  {{- end }}
+</article>
+{{- end }}

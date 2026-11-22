@@ -1,0 +1,7 @@
+{{- /* Shared bits for a project card: label + year, metric, stack, links */ -}}
+<div class="pj-label pj-{{ .Params.category | default "other" }}">
+  {{ .Params.label }}<span class="pj-year">{{ .Date.Format "2006" }}</span>
+</div>
+{{- with .Params.metric }}
+<div class="pj-metric"><b>{{ . }}</b>{{ with $.Params.metricLabel }}<span>{{ . }}</span>{{ end }}</div>
+{{- end }}
