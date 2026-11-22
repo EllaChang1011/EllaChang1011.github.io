@@ -3,9 +3,14 @@ languageCode = "zh-tw"
 title = "Ting-Yen (Ella) Chang"
 theme = "PaperMod"
 paginate = 5
+enableRobotsTXT = true
 
 [params]
   env = "production"
+  mainSections = ["posts"]
+  description = "Ting-Yen (Ella) Chang — M.S. from NYCU Institute of Intelligent Systems. Notes and projects on LLM security, AI agents and generative models."
+  # GoatCounter 名稱：註冊後填入（例如 "ellachang"），留空則不載入統計
+  goatcounter = ""
   defaultTheme = "auto"
   ShowReadingTime = false
   ShowShareButtons = false
